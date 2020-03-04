@@ -97,7 +97,7 @@ table {
   background-color:black;
   color:white;
   font-family: 'EB Garamond';
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 

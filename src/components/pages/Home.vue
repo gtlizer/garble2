@@ -16,8 +16,4 @@ export default {
 
 <style scoped>
 
-div{
- font-size: 40rem;
-}
-
 </style>
