@@ -1,6 +1,6 @@
 <template>
 <div>
-  
+  home
 </div>
 </template>
 
@@ -14,6 +14,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+div{
+ font-size: 40rem;
+}
 
 </style>

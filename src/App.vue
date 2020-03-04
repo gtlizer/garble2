@@ -95,7 +95,14 @@ table {
 
 #app{
   background-color:black;
+  color:white;
   font-family: 'EB Garamond';
+  height: 100vh;
+  width: 100vw;
+}
+
+Navigation{
+	z-index: 100;
 }
 
 

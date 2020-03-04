@@ -1,85 +1,106 @@
 <template>
 <div>
-  <div class="menu-icon">
-    <img src=".../assets/watercolor-button.png" alt="">
+
+  <!-- Toggle Icon -->
+  <div class="menu-icon" @click='toggleMenu()'>
+    <img width="5rem" src="~@/assets/static/watercolor-button.png"/>
   </div>
-  <nav>
+
+  <!-- Navigation -->
+  <transition name="slide-down" mode="out-in">
+    <nav v-if="toggle">
       <ul>
         <li 
           v-for="(linkObj, ind) in navList"
           :key="ind"
           >
             <router-link 
-              :to="linkObj.path">
+              :to="linkObj.path"
+              >
               {{linkObj.name}}
             </router-link>
         </li>
         <!-- Populates navigation links with a json array of objects -->
       </ul>
-  </nav>
+    </nav>
+  </transition>
+  
 </div>
 </template>
 
 <script>
+
+
 export default {
-  data: () => ({
-    navList: [
-      {
-        name:'Home',
-        path:'/'
-      },
-      {
-        name:'About',
-        path:'/about'
-      },
-      {
-        name:'Photography',
-        path:'/photography'
-      },
-      {
-        name:'Work',
-        path:'/work'
-      },
-      {
-        name:'Contact',
-        path:'/contact'
-      }
-    ]
-  }),
+  data() {
+    return {
+      toggle: false,
+      navList: [
+            {
+              name:'Home',
+              path:'/'
+            },
+            {
+              name:'About',
+              path:'/about'
+            },
+            {
+              name:'Photography',
+              path:'/photography'
+            },
+            {
+              name:'Work',
+              path:'/work'
+            },
+            {
+              name:'Contact',
+              path:'/contact'
+            }
+      ],
+    }
+  },
   methods:{
     toggleMenu(){
-      
+      this.toggle = !this.toggle
     }
-  }
-
+  },
+  watch:{
+    $route (){
+      this.toggle = false;
+    }
+} 
 }
 </script>
 
+
 <style scoped lang="scss">
 
-$border-color: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-
 @media screen and (min-width: 0px){
-  .menu-icon{
+  .menu-icon, img{
+    height: 10rem;
+    width: 10rem;
     position: fixed;
-    right: 0rem;
-    top: 0rem;
+    right: 3rem;
+    top: 3rem;
     z-index: 100;
-    color:white;
-    font-size: 3rem;
   }
 
   nav{
-    z-index: 1;
+    z-index: 99;
+    top:0;
+    left:0;
+    position: absolute;
+    background-image: url("~@/assets/static/paint-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: white;
-    color:black;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // transform: translateY(-100%);
+    // filter: invert(1);
     ul{
       display: flex;
       flex-direction: column;
@@ -112,11 +133,19 @@ $border-color: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
       }
     }
   }
-  
+
+  .slide-down-enter-active, .slide-down-leave-active {
+    transition: all .3s ease;
+  }
+  .slide-down-enter, .slide-down-leave-to /* .slide-down-leave-active below version 2.1.8 */ {
+    transform: translateY(-100%);
+  }
+
+
 }
 
 @media screen and (min-width: 1035px){
-
+// controls the responsiveness of the navigation
   nav{
     flex-direction: row;
     ul{
