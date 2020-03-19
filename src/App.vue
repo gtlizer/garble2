@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <Navigation/>
-        <router-view/>
+		<transition name="view" appear enter-active-class="animated fadeInUp" leave-active-class="animated fadeOutUp"><router-view/></transition>
     </div>
 </template>
 
@@ -103,6 +103,10 @@ table {
 
 Navigation{
 	z-index: 100;
+}
+
+.fadeInUp, .fadeOutDown{
+	animation-duration: .6s;
 }
 
 
