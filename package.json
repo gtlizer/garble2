@@ -39,7 +39,8 @@
     },
     "rules": {
       "no-console": "off",
-      "no-mixed-spaces-and-tabs": 0
+      "no-mixed-spaces-and-tabs": 0,
+      "no-unused-vars": "off"
     }
   },
   "browserslist": [

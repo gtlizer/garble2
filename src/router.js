@@ -34,7 +34,7 @@ const router = new VueRouter({
             path:'/contact',
             name:'Contact',
             component: load('Contact')
-        }
+        },
     ]
 })
 

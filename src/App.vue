@@ -13,7 +13,7 @@ import Navigation from './components/components/Navigation'
 export default {
     name: 'App',
     components: {
-        Navigation
+		Navigation,
     }
 };
 </script>

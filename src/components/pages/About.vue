@@ -1,21 +1,26 @@
 <template>
   <div class="container">
       
-        <div class="text" v-if="showText" @click='toggleText()'>
-            <div>
-              <h1>Gabe</h1>
-              <h1>Tiger</h1>
-              <h1>Lizer</h1>
+        <div class="text" @click='toggleText()'>
+            <div v-if="showText">
+              <transition name="view" appear enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                <div>
+                  <h1>Gabe</h1>
+                  <h1>Tiger</h1>
+                  <h1>Lizer</h1>
+                </div>
+              </transition>
             </div>
-        </div>
-        
-        <div class="text" v-else @click='toggleText()'>
-            <div>
-              <h1>I fail big</h1>
-              <h1>I learn fast</h1>
-              <h1>I work hard</h1>
-              <h1>I play always</h1>
-              <p>Gabe Tiger is a web designer, web developer, &#38; polymath. He has done a little bit of everything and is always down to taste a new food, learn a new skill, or live a new experience. </p>
+            <div v-else>
+              <transition name="view" appear enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                <div>
+                  <h1>I fail big</h1>
+                  <h1>I learn fast</h1>
+                  <h1>I work hard</h1>
+                  <h1>I play always</h1>
+                  <p>Gabe Tiger is a web designer, web developer, &#38; polymath. He has done a little bit of everything and is always down to taste a new food, learn a new skill, or live a new experience. </p>
+                </div>
+              </transition>
             </div>
         </div>
   </div>
@@ -37,7 +42,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 @media screen and (min-width: 0px){
   .container{
@@ -65,6 +70,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover{
+      cursor: pointer;
+    }
   }
     
 }
