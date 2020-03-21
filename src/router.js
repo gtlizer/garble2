@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Photo from './components/pages/Photo.vue';
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ const router = new VueRouter({
             name:'Contact',
             component: load('Contact')
         },
+        {
+            path: '/photo/:id',
+            name: 'photo',
+            component: Photo,
+          },
     ]
 })
 
