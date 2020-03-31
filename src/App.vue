@@ -1,21 +1,20 @@
 <template>
     <div id="app">
         <Navigation/>
-		<!-- <transition name="view" appear enter-active-class="animated fadeInUp" leave-active-class="animated fadeOutUp"> -->
-			<router-view/>
-		<!-- </transition> -->
+		<router-view/>
     </div>
 </template>
 
 
 
 <script>
+
 import Navigation from './components/components/Navigation'
 
 export default {
     name: 'App',
     components: {
-		Navigation,
+		Navigation
     }
 };
 </script>
@@ -95,21 +94,32 @@ table {
 
 // RESET CSS
 
+@font-face {
+  font-family: 'Canela';
+  src: url('assets/fonts/Canela-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'DIN Regular';
+  src: url('assets/fonts/DIN-Regular.otf');
+}
+
+@font-face {
+  font-family: 'DIN Light';
+  src: url('assets/fonts/DIN-Light.otf');
+}
+
+@font-face {
+  font-family: 'DIN Bold';
+  src: url('assets/fonts/DIN-Demi.otf');
+}
+
 #app{
-  background-color:black;
-  color:white;
-  font-family: 'EB Garamond';
+  background-color:white;
+  color:black;
+  font-family: 'Canela';
   height: 100%;
   width: 100vw;
 }
-
-Navigation{
-	z-index: 100;
-}
-
-.fadeInUp, .fadeOutDown{
-	animation-duration: .6s;
-}
-
 
 </style>

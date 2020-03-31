@@ -1,91 +1,75 @@
 <template>
-  <div class="container"> 
-    <div class="text">
-        <div>
-          {{ quoteList[Math.floor(Math.random() * this.quoteList.length)] }}
-        </div>
-    </div>
-  </div>
+<div class="home">
+  <!-- HEADER -->
+  <header>
+      <Quote/>
+      <HeaderBlob/>
+      <HeaderName/>
+  </header>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio"> 
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+      <Clocks/>
+  </footer>
+</div>
 </template>
 
 <script>
+import Quote from '../components/Quote'
+import HeaderBlob from '../components/HeaderBlob'
+import HeaderName from '../components/HeaderName'
+import Clocks from '../components/Clocks'
 
 export default {
   name: 'home',
-  data() {
-      return {
-        selectedQuote:'',
-        quoteList: [
-          'EUDIAMONIA',
-          'Fashion is just another way to tell time',
-          'Money isn\'t everything but it is the thing that buys everything',
-          'Never sacrifice health for wealth',
-          'People come into your life for a reason a season or a lifetime',
-          'I just want to look back and think that I\'ve always sent it',
-          'Everyday I wake up is a wonderful day',
-          'Don\'t be a dick to your dog, he\'s only a few years of your life, but you\'re all of his',
-          'If you stand for nothing then you will fall for anything',
-          'Shit happens',
-          'History is just something we tell ourselves',
-          'A good name goes ahead of you and a bad name follows you',
-          'Your perfect job may not even exist yet',
-          'I\'d rather be happy than right any day',
-          'The coolest kid is easy to spot, he\'s carrying around the biggest suffed animal',
-          'Leaders eat last',
-          'If your photo isn\'t good enough then you aren\'t close enough',
-          'I wonder if you look both ways before you cross my mind',
-          'Find your ikagi',
-          'Act like everyday is your birthday',
-          'Not everything that can be counted counts and not everything that counts can be counted',
-          'Little did he know',
-          'Clark kent if superman\'s critique on the whole human race',
-          'Time heals all wounds',
-          'Once you\'ve accepted death then you can finally live',
-  ]}},
-  method:{
-    
+  components:{
+    Quote,
+    HeaderBlob,
+    HeaderName,
+    Clocks
   },
-
 }
 </script>
 
 <style scoped>
+
 @media screen and (min-width: 0px){
-  .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+  .home{
+    height: 100%;
+    padding: 0 0 20rem 0;
     width: 100vw;
+    background-image: url(../../assets/static/Bitmap.svg);
+    background-size: contain;
+  }
+
+  header{
+    position: relative;
+    height: 120vh;
+    border: 2px red solid;
+
+  }
+
+}
+
+@media screen and (min-width: 1000px){
+
+  .home{
+    background-image: url(../../assets/static/Bitmap-wide.svg);
+    background-size: cover;
+  }
+
+  header{
+    height: 100vh;
+
   }
   
-  .text{
-    font-family: linotype-didot, serif;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    text-align: center;
-    
-  }
     
 }
-
-
-@media screen and (min-width: 768px){
-  .text{
-    width: 100%;
-  }
-
-}
-
-@media screen and (min-width: 992px){
-  .text{
-    width: 100%;
-  }
-
-}
-
 
 </style>

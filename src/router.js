@@ -17,30 +17,20 @@ const router = new VueRouter({
             component: load('Home')
         },
         {
-            path:'/about',
-            name:'About',
-            component: load('About')
-        },
-        {
             path:'/photography',
             name:'Photography',
             component: load('Photography')
         },
         {
-            path:'/work',
-            name:'Work',
-            component: load('Work')
-        },
-        {
-            path:'/contact',
-            name:'Contact',
-            component: load('Contact')
-        },
-        {
             path: '/photo/:id',
             name: 'photo',
             component: Photo,
-          },
+        },
+        {
+            path:'/library',
+            name:'Library',
+            component: load('Library')
+        },
     ]
 })
 

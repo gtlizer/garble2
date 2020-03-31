@@ -55,7 +55,6 @@ export default {
     width: 100%;
     height: 15rem;
     object-fit: cover;
-    border: .2rem white solid;
   }
 
   .img-wrapper{
@@ -72,8 +71,10 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color: rgba($color: #000000, $alpha: .5);
+    background-color: rgba($color: #000000, $alpha: .6);
     opacity: 0;
+    transition: all .3s ease;
+    color:white;
   }
 
   .img-wrapper:hover .hover-text{

@@ -1,5 +1,6 @@
 <template>
-<div>
+<div class="page">
+    <div class="gallery-cover"></div>
     <Gallery />
     <Photo />
 </div>
@@ -21,6 +22,18 @@ export default {
 
 <style scoped lang="scss">
 
+.gallery-cover{
+  width: 100vw;
+  height: 14rem;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
 
+.page{
+  overflow: scroll;
+}
 
 </style>

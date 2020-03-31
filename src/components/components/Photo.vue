@@ -160,7 +160,7 @@ export default {
       display: block;
       width: 6px;
       height: 100%;
-      background-color: white;
+      background-color: black;
     }
 
     .grid-icon--fill > .layer > span {
@@ -173,7 +173,7 @@ export default {
       content: "";
       width: 6px;
       height: 100%;
-      background-color: white;
+      background-color: black;
       left: -10px;
       position: absolute;
     }
@@ -183,7 +183,7 @@ export default {
       content: "";
       width: 6px;
       height: 100%;
-      background-color: white;
+      background-color: black;
       right: -10px;
       position: absolute;
     }

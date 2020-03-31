@@ -1,6 +1,6 @@
 <template>
   <div>
-      Work
+      Library
   </div>
 </template>
 
