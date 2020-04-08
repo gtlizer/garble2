@@ -16,7 +16,7 @@
 </template>
 
 
-<script>
+<script> 
 import photos from '@/photos.json';
 
 export default {

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Photo from './components/pages/Photo.vue';
+import Project from './components/pages/Project.vue';
 
 Vue.use(VueRouter)
 
@@ -25,6 +26,16 @@ const router = new VueRouter({
             path: '/photo/:id',
             name: 'photo',
             component: Photo,
+        },
+        {
+            path:'/portfolio',
+            name:'Portfolio',
+            component: load('Portfolio')
+        },
+        {
+            path: '/project/:id',
+            name: 'project',
+            component: Project,
         },
         {
             path:'/library',

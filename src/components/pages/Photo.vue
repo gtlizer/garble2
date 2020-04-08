@@ -10,7 +10,7 @@ export default {
   name: 'photo',
   components: {
     Photo,
-  },
+  }, 
 }
 </script>
 

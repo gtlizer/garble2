@@ -9,7 +9,7 @@
 
   <!-- PORTFOLIO SECTION -->
   <section class="portfolio"> 
-
+    <HeaderPortfolio/>
   </section>
 
   <!-- FOOTER -->
@@ -23,7 +23,9 @@
 import Quote from '../components/Quote'
 import HeaderBlob from '../components/HeaderBlob'
 import HeaderName from '../components/HeaderName'
+import HeaderPortfolio from '../components/HeaderPortfolio'
 import Clocks from '../components/Clocks'
+
 
 export default {
   name: 'home',
@@ -31,6 +33,7 @@ export default {
     Quote,
     HeaderBlob,
     HeaderName,
+    HeaderPortfolio,
     Clocks
   },
 }
@@ -51,7 +54,6 @@ export default {
   header{
     position: relative;
     height: 120vh;
-    border: 2px red solid;
 
   }
 

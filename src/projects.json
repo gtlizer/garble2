@@ -1,0 +1,102 @@
+[
+  {
+    "id": "biomeid",
+    "name": "Biome Identification and Zoo Animal Assignment",
+    "description":"Implemented a historical weather API to gather data about the 50 most populous U.S. cities to determine their biome Utilized Python to determine which animal species belonged in a given zoo using the API weather data and lists that contained over 500 animals and their biomes",
+    "year":"2018",
+    "link": "https://github.com/gtlizer/biomeidentification",
+    "featured": false,
+    "filename": "biomeid.jpg",
+    "filename_mobile": "biomeid_mobile.jpg"
+  },
+  {
+    "id": "canvaspeddlar",
+    "name": "The Canvas Peddlar",
+    "description": "Designed and developed a custom responsive website for The Canvas Peddlar Picture Framing in North Hollywood California Used Wix to design and build the custom website Over 1000+ unique impressions over the past 6 months for a small business with previously no internet presence",
+    "year": "2019",
+    "link": "https://www.canvaspeddlar.com/",
+    "featured": false,
+    "filename": "canvas_peddlar.jpg",
+    "filename_mobile": "canvas_peddlar_mobile.jpg"
+  },
+  {
+    "id":"charlieburg",
+    "name": "Charlie Burg",
+    "description": "Designed and developed Charlie Burg's custom responsive website. Consistently updated both the design and code of the site in order to add and maintain new features including purchasing through Shopify and the addition and removal or changing tour dates.",
+    "year": "2018",
+    "link": "https://www.charlieburg.world/",
+    "featured": true,
+    "filename": "charlie_burg.jpg",
+    "filename_mobile": "charlie_burg_mobile.jpg"
+  },
+  {
+    "id":"listoflists",
+    "name": "List of Lists",
+    "description": "Designed and restructured the content of the site. Implemented and customized a Wordpress theme per client's request Assisted with further modifications and custom code editions after completion of project",
+    "year": "2020",
+    "link": "https://listoflists.ischool.syr.edu/",
+    "featured": false,
+    "filename": "list_of_lists.jpg",
+    "filename_mobile": "list_of_lists_mobile.jpg"
+  },
+  {
+    "id":"niceasheck",
+    "name": "Nice as Heck",
+    "description": "Helped transition from a Wix site to a Webflow site with e-commerce integration and global inventory production and shipping",
+    "year": "2020",
+    "link": "https://www.niceasheck.com/",
+    "featured": true,
+    "filename": "nice_as_heck.jpg",
+    "filename_mobile": "nice_as_heck_mobile.jpg"
+  },
+  {
+    "id":"samshapiro",
+    "name": "Sam Shapiro",
+    "description": "Helped a client prepare their film for widespread film festival adoption. This entailed designing a custom movie poster based off the plot and style of the movie.  Designed a complete press kit based off the poster and client's specifications. Designed a custom website based off the poster and the press kit and the client's specifications. Developed the single page custom website while ensuring that it is responsive and SEO friendly. Deployed the site and assisted in troubleshooting after launch",
+    "year": "2019",
+    "link": "https://www.exhibitionfilm.com/",
+    "featured": true,
+    "filename": "exhibition.jpg",
+    "filename_mobile": "exhibition_mobile.jpg"
+  },
+  {
+    "id":"stooplee",
+    "name": "Stoop Lee",
+    "description": "Designed and developed a custom responsive website for rapper Stoop Lee. Used Sqaurespace to design and build the responsive, multi-page site",
+    "year": "2019",
+    "link": "https://www.stooplee.com/",
+    "featured": false,
+    "filename": "stoop_lee.jpg",
+    "filename_mobile": "stoop_lee_mobile.jpg"
+  },
+  {
+    "id":"travel363",
+    "name": "Travel 363",
+    "description": "Designed and built a custom responsive single page site for a trip to Yosemite Valley.  Utilized Weather API and Google Maps Integration Designed and programmed interactions and animations.",
+    "year": "2019",
+    "link": "https://gtlizer.github.io./",
+    "featured": false,
+    "filename": "travel363.jpg",
+    "filename_mobile": "travel363_mobile.jpg"
+  },
+  {
+    "id":"ravle",
+    "name": "Ravle",
+    "description": "Active contributions to design and development.",
+    "year": "2020",
+    "link": "https://ravle.com/",
+    "featured": true,
+    "filename": "ravle.jpg",
+    "filename_mobile": "ravle_mobile.jpg"
+  },
+  {
+    "id":"ipli",
+    "name": "iSchool Public Libraries Initiative",
+    "description": "Developed a page for iSchool",
+    "year": "2019",
+    "link": "https://ischool.syr.edu/research/research-centers/ischool-public-libraries-initiative/",
+    "featured": false,
+    "filename": "ipli.jpg",
+    "filename_mobile": "ipli_mobile.jpg"
+  }
+]

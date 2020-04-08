@@ -9,7 +9,7 @@ LIZER
 
 <script>
 export default {
-  name: 'Header Name',
+  name: 'HeaderName',
 }
 </script>
 
@@ -25,9 +25,10 @@ export default {
     position: absolute;
     left: 50%;
     transform:translateX(-50%);
-    bottom: 5%;
-    line-height: 6rem;
-    letter-spacing: 1rem;
+    bottom: 0;
+    line-height: 7rem;
+    letter-spacing: 3rem;
+    text-align: left;
   }
   
 }

@@ -8,7 +8,7 @@
 
 
 <script>
-
+import firebase from 'firebase'
 import Navigation from './components/components/Navigation'
 
 export default {

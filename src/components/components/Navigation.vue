@@ -42,6 +42,11 @@ export default {
           name:'Photography',
           path:'/photography',
           icon: 'fa fa-image',
+        },
+        {
+          name:'Portfolio',
+          path:'/portfolio',
+          icon: 'fa fa-bookmark',
         }
       ]
     }
