@@ -37,11 +37,6 @@ const router = new VueRouter({
             name: 'project',
             component: Project,
         },
-        {
-            path:'/library',
-            name:'Library',
-            component: load('Library')
-        },
     ]
 })
 

@@ -30,7 +30,7 @@ export default {
           'A good name goes ahead of you and a bad name follows you',
           'Your perfect job may not even exist yet',
           'I\'d rather be happy than right any day',
-          'The coolest kid is easy to spot, he\'s carrying around the biggest suffed animal',
+          'The coolest kid is easy to spot, he\'s carrying around the biggest stuffed animal',
           'Leaders eat last',
           'If your photo isn\'t good enough then you aren\'t close enough',
           'I wonder if you look both ways before you cross my mind',

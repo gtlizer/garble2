@@ -1,5 +1,10 @@
 <template>
 <div class="page">
+    <router-link :to="`/`">
+      <div class="menu-icon">
+          <img src="~@/assets/static/glabe_dark.png"/>
+      </div>
+  </router-link>
     <div class="gallery-cover"></div>
     <Gallery />
     <Photo />
@@ -21,6 +26,18 @@ export default {
 
 
 <style scoped lang="scss">
+
+.menu-icon{
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  z-index: 11;
+  
+  img{
+    height: 7rem;
+    width: 6rem;
+  }
+}
 
 .gallery-cover{
   width: 100vw;

@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-        <Navigation/>
 		<router-view/>
     </div>
 </template>
@@ -9,12 +8,11 @@
 
 <script>
 import firebase from 'firebase'
-import Navigation from './components/components/Navigation'
 
 export default {
     name: 'App',
     components: {
-		Navigation
+		
     }
 };
 </script>

@@ -8,13 +8,15 @@
     </div>
     
     <ul v-if="toggle">
-      <li 
-        v-for="(linkObj, ind) in navList"
-        :key="ind"
-        >
-          <router-link :to="linkObj.path">
-            <i v-bind:class="linkObj.icon"></i>
-          </router-link>
+      <li>
+        <a href="https://www.instagram.com/bestcoastgabe/" target="_blank">
+          <i class="fa fa-instagram"/>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/gabelizer/" target="_blank">
+          <i class="fa fa-linkedin"/> 
+        </a>
       </li>
     </ul>
   </nav>
@@ -26,17 +28,12 @@
 export default {
   data() {
     return {
-      toggle: false,
+      toggle: true,
       navList: [
         {
           name:'Home',
           path:'/',
           icon:'fa fa-home',
-        },
-        {
-          name:'Library',
-          path:'/library',
-          icon:'fa fa-book',
         },
         {
           name:'Photography',
@@ -71,7 +68,7 @@ export default {
   nav{
     position: absolute;
     right: 2%;
-    top: 1%;
+    top: .3%;
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -83,14 +80,21 @@ export default {
   }
 
   i{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-top: 1.5rem;
+    color: #512833;
   }
   
   nav img{
     height: 7rem;
     width: 6rem;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  nav{
+    top: 1%;
   }
 }
 

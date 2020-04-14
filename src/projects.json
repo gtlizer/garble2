@@ -7,6 +7,7 @@
     "link": "https://github.com/gtlizer/biomeidentification",
     "featured": false,
     "filename": "biomeid.jpg",
+    "filename_medium": null,
     "filename_mobile": "biomeid_mobile.jpg"
   },
   {
@@ -17,6 +18,7 @@
     "link": "https://www.canvaspeddlar.com/",
     "featured": false,
     "filename": "canvas_peddlar.jpg",
+    "filename_medium": null,
     "filename_mobile": "canvas_peddlar_mobile.jpg"
   },
   {
@@ -27,6 +29,7 @@
     "link": "https://www.charlieburg.world/",
     "featured": true,
     "filename": "charlie_burg.jpg",
+    "filename_medium": "charlie_burg_medium.jpg",
     "filename_mobile": "charlie_burg_mobile.jpg"
   },
   {
@@ -37,6 +40,7 @@
     "link": "https://listoflists.ischool.syr.edu/",
     "featured": false,
     "filename": "list_of_lists.jpg",
+    "filename_medium": null,
     "filename_mobile": "list_of_lists_mobile.jpg"
   },
   {
@@ -47,6 +51,7 @@
     "link": "https://www.niceasheck.com/",
     "featured": true,
     "filename": "nice_as_heck.jpg",
+    "filename_medium": "nice_as_heck_medium.jpg",
     "filename_mobile": "nice_as_heck_mobile.jpg"
   },
   {
@@ -57,6 +62,7 @@
     "link": "https://www.exhibitionfilm.com/",
     "featured": true,
     "filename": "exhibition.jpg",
+    "filename_medium": "exhibition_mobile.jpg",
     "filename_mobile": "exhibition_mobile.jpg"
   },
   {
@@ -67,6 +73,7 @@
     "link": "https://www.stooplee.com/",
     "featured": false,
     "filename": "stoop_lee.jpg",
+    "filename_medium": null,
     "filename_mobile": "stoop_lee_mobile.jpg"
   },
   {
@@ -77,6 +84,7 @@
     "link": "https://gtlizer.github.io./",
     "featured": false,
     "filename": "travel363.jpg",
+    "filename_medium": null,
     "filename_mobile": "travel363_mobile.jpg"
   },
   {
@@ -87,6 +95,7 @@
     "link": "https://ravle.com/",
     "featured": true,
     "filename": "ravle.jpg",
+    "filename_medium": "ravle_medium.jpg",
     "filename_mobile": "ravle_mobile.jpg"
   },
   {
@@ -97,6 +106,7 @@
     "link": "https://ischool.syr.edu/research/research-centers/ischool-public-libraries-initiative/",
     "featured": false,
     "filename": "ipli.jpg",
+    "filename_medium": null,
     "filename_mobile": "ipli_mobile.jpg"
   }
 ]

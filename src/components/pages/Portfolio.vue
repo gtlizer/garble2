@@ -25,7 +25,7 @@ export default {
 @media screen and (min-width: 0px){
 
   .portfolio{
-    background-color: beige;
+    background-color: white;
     color:black;
     height: 100vh;
   }

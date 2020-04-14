@@ -1,5 +1,10 @@
 <template>
 <div class="projects">
+  <router-link :to="`/`">
+    <div class="menu-icon">
+        <img src="~@/assets/static/glabe_dark.png"/>
+    </div>
+  </router-link>
   <header>
     <div class="name my-5">
         {{this.project.name}}
@@ -13,7 +18,7 @@
     <p>    
       {{project.description}}
     </p>
-    <a :href="project.link">
+    <a :href="project.link" target="_blank">
       Explore Project
     </a>
   </div>
@@ -70,6 +75,17 @@ export default {
     padding: 2rem;
     color:#401C26;
 
+    .menu-icon{
+      position: absolute;
+      right: 2%;
+      top: 1%;
+      
+      img{
+        height: 7rem;
+        width: 6rem;
+      }
+    }
+
     header{
       font-size: 4rem;
       text-align: left;
@@ -84,7 +100,7 @@ export default {
       font-size: 1.7rem;
       padding: 3rem;
       line-height: 2.5rem;
-      box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.30);
+      box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
       display: flex;
       flex-direction: column;
       align-items: right;
@@ -135,20 +151,21 @@ export default {
 
     .details{
       width: 60rem;
-      font-size: 2.5rem;
+      font-size: 2rem;
       padding: 4rem;
       line-height: 3.5rem;
       display: flex;
       flex-direction: column;
       align-items: right;
-      margin-bottom: -10rem;
+      margin-bottom: 0rem;
       z-index: 10;
       position: absolute;
-      top: 15%;
-      right: 10%;
+      top: 25%;
+      transform: translateY(-50%);
+      right: 6%;
 
       p{
-        margin-bottom: 7rem;
+        margin-bottom: 10rem;
       }
 
       a{
@@ -162,7 +179,8 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.30);
+      margin-top: -8rem;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
 
       .desktop{
         display: inherit;
