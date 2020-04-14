@@ -49,8 +49,8 @@ export default {
   },
   created (){
     var controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-        duration: 1052,	// the scene should last for a scroll distance of 1052px
+    var portfolioPin = new ScrollMagic.Scene({
+        duration: 4208,	// the scene should last for a scroll distance of 1052px
         tiggerElement: '#portfolio'
       })
       .setPin("#portfolio", {pushFollowers: false}) // pins the element for the the scene's duration
