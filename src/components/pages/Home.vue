@@ -10,7 +10,7 @@
   </header>
 
   <!-- PORTFOLIO SECTION -->
-  <section class="portfolio"> 
+  <section id="portfolio"> 
     <HeaderPortfolio/>
   </section>
 
@@ -34,6 +34,7 @@ import HeaderBlob from '../components/HeaderBlob'
 import HeaderName from '../components/HeaderName'
 import HeaderPortfolio from '../components/HeaderPortfolio'
 import Clocks from '../components/Clocks'
+import ScrollMagic from "scrollmagic"
 
 
 export default {
@@ -46,6 +47,15 @@ export default {
     HeaderPortfolio,
     Clocks
   },
+  created (){
+    var controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+        duration: 1052,	// the scene should last for a scroll distance of 1052px
+        tiggerElement: '#portfolio'
+      })
+      .setPin("#portfolio", {pushFollowers: false}) // pins the element for the the scene's duration
+      .addTo(controller);
+  }
 }
 </script>
 

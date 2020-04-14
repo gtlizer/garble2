@@ -1,7 +1,7 @@
 <template>
-<div class="portfolio">
+<div class="portfolio" id="portfolio">
   <div class="column-wrapper">
-    <div class="left">
+    <div class="left" id="left">
       <div class="left-wrapper">
             <svg class="white-blob" xmlns="http://www.w3.org/2000/svg" width="150%" height="800px" viewBox="0 0 978.826 818.47">
               <g id="blob-shape_copy" data-name="blob-shape copy" transform="translate(0 505.518) rotate(-68)">
