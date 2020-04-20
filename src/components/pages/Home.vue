@@ -13,9 +13,10 @@
   <section id="portfolio"> 
     <HeaderPortfolio/>
   </section>
+  <div id="portfolioStop"></div>
 
   <!-- FOOTER -->
-  <footer>
+  <footer id="footer">
       <Clocks/>
   </footer>
   <div class="green-block">
@@ -47,19 +48,74 @@ export default {
     HeaderPortfolio,
     Clocks
   },
-  created (){
+  mounted (){
     var controller = new ScrollMagic.Controller();
     var portfolioPin = new ScrollMagic.Scene({
-        duration: 4208,	// the scene should last for a scroll distance of 1052px
-        tiggerElement: '#portfolio'
+        triggerElement: '#portfolio',
+        triggerHook: 0
       })
-      .setPin("#portfolio", {pushFollowers: false}) // pins the element for the the scene's duration
+      .setClassToggle("#portfolio", "fix-work")
       .addTo(controller);
+
+    var footerPin = new ScrollMagic.Scene({
+        triggerElement: '#footer',
+        triggerHook: 1
+      })
+      .setClassToggle("#portfolio", "footer-pinned")
+      .addTo(controller);
+
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+.column-wrapper {
+      position: relative;
+      width: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      .left {
+          z-index: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+           .left-wrapper {
+              height: 700px;
+              overflow: hidden;
+            }
+      }
+    }
+ .fix-work {
+   .column-wrapper {
+     height: auto;
+   }
+   .left {
+     position: relative;
+     .left-wrapper {
+       position: fixed !important;
+       left: 0;
+       top: 0;
+       width: 50%;
+      height: 700px;
+      overflow: hidden;
+     }
+   }
+}
+.fix-work.footer-pinned {
+  .left {
+     position: relative;
+     justify-content: flex-end;
+     .left-wrapper {
+       position: relative !important;
+        width: 100%;
+      height: 700px;
+      overflow: hidden;
+     }
+   }
+}
+</style>
+
+<style lang="scss" scoped>
 
 @media screen and (min-width: 0px){
 

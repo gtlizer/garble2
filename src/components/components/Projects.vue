@@ -48,7 +48,6 @@ export default {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
   text-align: center;
 
   

@@ -1,5 +1,5 @@
 <template>
-<div class="portfolio" id="portfolio">
+<div class="portfolio">
   <div class="column-wrapper">
     <div class="left" id="left">
       <div class="left-wrapper">
@@ -55,9 +55,9 @@ export default {
     }
   },
   mounted() {
-    for(var i=0;i<=this.projects.length;i++){
-      if (this.projects[i].featured){
-        this.portfolio.push(projects[i])
+    for(const project of this.projects){
+      if (project.featured){
+        this.portfolio.push(project)
       }
     }
   },
@@ -78,7 +78,6 @@ export default {
 
   .column-wrapper{
     display: flex;
-    flex-direction: column;
 
     .left{
       position: relative;
@@ -118,11 +117,8 @@ export default {
     }
     .right{
       width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      z-index: 50;
-      overflow:scroll;
+      display: flex;
+      flex-direction: column;
 
       .featured{
         font-size: 3rem;
@@ -159,22 +155,15 @@ export default {
 @media screen and (min-width: 1000px){
   
 .portfolio{
-  margin-bottom: 20rem;
   top:0px;
   width: 100%;
   z-index: 200;
-  // Added for scroll effect
-  height: 100vh;
-  overflow: hidden;
-  position: fixed;
     
   .column-wrapper{
     flex-direction: row;
 
     .left{
       width: 50%;
-      // Added for scroll effect
-      overflow:hidden;
 
       .left-wrapper{
 
@@ -206,9 +195,6 @@ export default {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      // Added for scroll effect
-      overflow: scroll;
-      height: 100vh;
 
       .featured{
 
