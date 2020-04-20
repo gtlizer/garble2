@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+	<div class="cursor"></div>
 		<router-view/>
     </div>
 </template>
@@ -12,7 +13,7 @@ export default {
     name: 'App',
     components: {
 		
-    }
+    },
 };
 </script>
 
@@ -117,6 +118,19 @@ table {
   font-family: 'Canela';
   height: 100%;
   width: 100vw;
+}
+
+.cursor {
+    width: 20px;
+	z-index: 300;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
 }
 
 </style>

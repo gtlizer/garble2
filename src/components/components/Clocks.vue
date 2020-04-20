@@ -1,11 +1,18 @@
 <template>
-<div class="clocks" >
-  <div class="clock"
-      v-for="(timezone,ind) in timezones" 
-      :key="ind"
-      :style="{ backgroundImage: `url(${timezone.path})` }"
-      >
-      <div class="clock-text">{{timezone.city}} <br/> {{timezone.time}}</div>
+<div class="clock-wrapper">
+  <div class="clocks" >
+    <div class="clock"
+        v-for="(timezone,ind) in timezones" 
+        :key="ind"
+        :style="{ backgroundImage: `url(${timezone.path})` }"
+        >
+        <div class="clock-text">{{timezone.city}} <br/> {{timezone.time}}</div>
+    </div>
+  </div>
+  <div class="sayhi">
+    <a href="mailto: gabelizer@gmail.com">
+      Say Hi!
+    </a>
   </div>
 </div>
 </template>
@@ -148,11 +155,14 @@ export default {
 
 @media screen and (min-width: 0px){
 
+.clock-wrapper{
+    padding: 10rem 0;
+}
+
 .clocks{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10rem 0;
 
   a{
     display: block;
@@ -181,7 +191,17 @@ export default {
       line-height: 2.3rem;
     }
   }
-  
+}
+
+.sayhi{
+  color:black;
+  text-align: center;
+  font-size: 2.5rem;
+  a{
+    display: block;
+    width: 100px;
+    margin: auto;
+  }
 }
   
 }
@@ -196,8 +216,17 @@ export default {
     width: 200px;
   }
 
+  .clock:last-child{
+    width: 450px;
+    height:450px;
+  }
+
   img{
     width: 200px;
+  }
+
+  .sayhi{
+    font-size: 2.6rem;
   }
 
 }

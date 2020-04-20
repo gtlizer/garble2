@@ -5,7 +5,9 @@
           <img src="~@/assets/static/glabe_dark.png"/>
       </div>
   </router-link>
-    <div class="gallery-cover"></div>
+    <div class="gallery-cover">
+      <img src="~@/assets/static/skating.gif" alt="" height="130px">
+    </div>
     <Gallery />
     <Photo />
 </div>

@@ -29,6 +29,7 @@ export default {
     line-height: 7rem;
     letter-spacing: 3rem;
     text-align: left;
+
   }
   
 }

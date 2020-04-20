@@ -25,7 +25,6 @@ export default {
           'Everyday I wake up is a wonderful day',
           'Don\'t be a dick to your dog, he\'s only a few years of your life, but you\'re all of his',
           'If you stand for nothing then you will fall for anything',
-          'Shit happens',
           'History is just something we tell ourselves',
           'A good name goes ahead of you and a bad name follows you',
           'Your perfect job may not even exist yet',
@@ -38,7 +37,7 @@ export default {
           'Act like everyday is your birthday',
           'Not everything that can be counted counts and not everything that counts can be counted',
           'Little did he know',
-          'Clark kent if superman\'s critique on the whole human race',
+          'Clark kent is superman\'s critique on the whole human race',
           'Time heals all wounds',
           'Once you\'ve accepted death then you can finally live',
   ]}}
@@ -55,7 +54,7 @@ export default {
     text-align: left;
     color:#512833;
     position: absolute;
-    left:50%;
+    left:45%;
     top: 10%;
     transform: translateX(-50%);
     width: 80%;
@@ -68,7 +67,7 @@ export default {
   .quote{
     font-size: 10rem;
     top: 13%;
-    left: 5%;
+    left: 3%;
     transform: translateX(0);
   }
 

@@ -21,7 +21,7 @@
   </footer>
   <div class="green-block">
     <router-link :to="`/photography`">
-      Photos!
+      Photos This Way &#8594;
     </router-link>
   </div>
 
@@ -80,7 +80,7 @@ export default {
           flex-direction: column;
           justify-content: flex-start;
            .left-wrapper {
-              height: 700px;
+              height: 1000px;
               overflow: hidden;
             }
       }
@@ -96,7 +96,7 @@ export default {
        left: 0;
        top: 0;
        width: 50%;
-      height: 700px;
+      height: 1000px;
       overflow: hidden;
      }
    }
@@ -106,10 +106,10 @@ export default {
      position: relative;
      justify-content: flex-end;
      .left-wrapper {
-       position: relative !important;
+        position: relative !important;
         width: 100%;
-      height: 700px;
-      overflow: hidden;
+        height: 1063px;
+        overflow: hidden;
      }
    }
 }
@@ -135,16 +135,16 @@ export default {
 
   .green-block{
     width: 100vw;
-    height: 2rem;
+    height: 5rem;
     background-color: #565945;
     position: absolute;
     bottom: 0;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: #565945;
+    color: white;
     font-size: 1.5rem;
+    padding-right: 2rem; 
   }
 
 }

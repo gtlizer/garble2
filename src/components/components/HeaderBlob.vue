@@ -9,10 +9,10 @@
     </svg>
     <div class="blob-text">
       <div>
-        I help brands and sometimes create my own
+        I help bring ideas to life
       </div>
       <p>
-        Artworks and illustrations were my gateway to the creative industry which led to the foundation of my own studio and to first steps in the digital world. A user-centered mindset and sensitivity for design turned out to be the perfect fit when collaborating with agencies, clients and brands to develop digital concepts and solve problems together.
+        I am a designer-developer hybrid with a focus on data and branding who provides digital solutions to innovative brands and individuals. I take a holistic approach to design and development through a user-centered design method that focuses on the power of collaboration and thinking outside the box.
       </p>
     </div>
   </div>
@@ -57,7 +57,7 @@ export default {
   .blob-text{
     position: absolute;
     top:50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%,-50%);
     width: 70%;
     text-align: left;

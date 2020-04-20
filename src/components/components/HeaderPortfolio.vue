@@ -17,9 +17,8 @@
               Work.
             </div>
             <div class="portfolio-text">
-              Talk about your work Clients and skills set. Talk about your work Clients and skills set. Talk about your work Clients and skills set. Talk about your work Clients and skills set. Talk about your work Clients and skills set.
-            </div>
-             
+              To blow the minds of clients and consumers I trust in co-creation, the latest technology, and intuition.  
+            </div>         
       </div>
     </div>
     <div class="right">
@@ -75,6 +74,7 @@ export default {
 @media screen and (min-width: 0px){
 
 .portfolio{
+  margin-top: 10rem;
 
   .column-wrapper{
     display: flex;
@@ -98,7 +98,7 @@ export default {
           line-height: 2.5rem;
           width: 80%;
           position: absolute;
-          top: 60%;
+          top: 40%;
           left: 50%;
           transform: translateX(-50%);
         }
@@ -176,7 +176,7 @@ export default {
         .portfolio-text{
           font-size: 2.5rem;
           line-height: 4rem;
-          top: 55%;
+          top: 50%;
           left: 47%;
           transform: translateX(-50%);
         }
