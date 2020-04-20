@@ -49,8 +49,5 @@ export default {
   top: 0;
 }
 
-.page{
-  overflow: scroll;
-}
 
 </style>
