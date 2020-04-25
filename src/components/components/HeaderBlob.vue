@@ -29,12 +29,12 @@ export default {
 
 <style scoped lang="scss">
 
-@media screen and (min-width: 0px){
+@media screen and (min-width: 320px){
   .blob{
     position: absolute;
-    top: 30%;
-    right: 50%;
-    transform: translateX(50%);
+    top: 20%;
+    left: -15%;
+    margin-bottom: 30rem;
   }
 
   .header-blob-wide{
@@ -56,17 +56,16 @@ export default {
 
   .blob-text{
     position: absolute;
-    top:50%;
-    left: 48%;
-    transform: translate(-50%,-50%);
-    width: 70%;
+    top:20%;
+    left: 15%;
+    width: 55%;
     text-align: left;
     font-family: DIN Regular;
     font-size: 2.5rem;
 
     div{
       width: 55%;
-      margin-bottom: 5rem;
+      margin-bottom: 8rem;
     }
 
     p{
@@ -77,7 +76,55 @@ export default {
   }
 }
 
+
+@media screen and (min-width: 474px){
+  .blob{
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10rem;
+  }
+
+  .blob-text{
+    position: absolute;
+    top:27%;
+    left: 15%;
+    width: 55%;
+    text-align: left;
+    font-family: DIN Regular;
+    font-size: 2.5rem;
+
+    div{
+      width: 70%;
+      margin-bottom: 5rem;
+    }
+  }
+
+}
+
 @media screen and (min-width: 1000px){
+  .blob{
+    font-size: 10rem;
+    top: 30%;
+    right: 5%;
+    left:auto;
+    transform: scale(1.2);
+  }
+
+  .blob-text{
+    top:30%;
+    left: 15%;
+    width: 55%;
+
+    div{
+      width: 70%;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 1600px){
   .blob{
     font-size: 10rem;
     top: 30%;
@@ -85,18 +132,11 @@ export default {
     transform: scale(1.2);
   }
 
-  .header-blob-wide{
-    display: block;
-    filter: drop-shadow(0 4rem 0 rgb(138,139,112));
-    
-  }
-
-  .header-blob{
-    display: none;
-  }
-
-
   .blob-text{
+    top:34%;
+    left: 16%;
+    width: 60%;
+
     div{
       width: 70%;
     }

@@ -153,7 +153,7 @@ export default {
 
 <style scoped lang="scss">
 
-@media screen and (min-width: 0px){
+@media screen and (min-width: 320px){
 
 .clock-wrapper{
     padding: 10rem 0;
@@ -169,8 +169,11 @@ export default {
   }
 
   .clock:last-child{
-    width: 450px;
-    height:450px;
+    transform: scale(1.4);
+    margin: 10rem auto;
+    .clock-text{
+      font-size: 1.7rem;
+    }
   }
 
   .clock{
@@ -199,59 +202,48 @@ export default {
   font-size: 2.5rem;
   a{
     display: block;
-    width: 100px;
+    width: 70px;
     margin: auto;
+    position: relative;
+    padding-bottom: .7rem;
+    transition: all ease .4s;
+  
+    &::after{
+      content: "";
+      bottom: 0px;
+      width: 0px;
+      height: 2px;
+      margin: 5px 0 0;
+      transition: all .4s ease-in-out;
+      opacity: 0;
+      left: 0;
+      background-color:black;
+      position: absolute;
+      display: block;
+    }
+
+    &:hover::after {
+      width: 100%;
+      opacity: 1;
+    }
   }
 }
-  
 }
 
 @media screen and (min-width: 1000px){
   
-.clocks{
-  flex-direction: row;
-  align-items: center;
-  
-  .clock{
-    width: 200px;
+  .clocks{
+    flex-direction: row;
+    align-items: center;
   }
-
-  .clock:last-child{
-    width: 450px;
-    height:450px;
-  }
-
-  img{
-    width: 200px;
-  }
-
-  .sayhi{
-    font-size: 2.6rem;
-  }
-
-}
-
-  
-
 }
 
 
 @media screen and (min-width: 1300px){
   
 .clocks{
-  flex-direction: row;
-  
-  .clock{
-    width: 300px;
-  }
-
-  img{
-    width: 300px;
-  }
-
+  padding: 0 3rem;
 }
-
-  
 
 }
 

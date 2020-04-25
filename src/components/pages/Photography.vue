@@ -1,13 +1,10 @@
 <template>
 <div class="page">
     <router-link :to="`/`">
-      <div class="menu-icon">
-          <img src="~@/assets/static/glabe_dark.png"/>
+      <div class="gallery-cover">
+        <img src="~@/assets/static/skating.gif" alt="" height="130px">
       </div>
-  </router-link>
-    <div class="gallery-cover">
-      <img src="~@/assets/static/skating.gif" alt="" height="130px">
-    </div>
+    </router-link>
     <Gallery />
     <Photo />
 </div>
@@ -29,18 +26,6 @@ export default {
 
 <style scoped lang="scss">
 
-.menu-icon{
-  position: fixed;
-  right: 2%;
-  top: 2%;
-  z-index: 11;
-  
-  img{
-    height: 7rem;
-    width: 6rem;
-  }
-}
-
 .gallery-cover{
   width: 100vw;
   height: 14rem;
@@ -49,6 +34,8 @@ export default {
   z-index: 10;
   left: 0;
   top: 0;
+  display: flex;
+  justify-content: center;
 }
 
 

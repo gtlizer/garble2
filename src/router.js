@@ -37,7 +37,10 @@ const router = new VueRouter({
             name: 'project',
             component: Project,
         },
-    ]
+    ],
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView();
+    }
 })
 
 export default router

@@ -46,18 +46,18 @@ export default {
 
 
 <style scoped lang="scss">
-@media screen and (min-width: 0px){
+@media screen and (min-width: 320px){
   
   .quote{
     font-family: Canela;
-    font-size: 5.2rem;
+    font-size: 4rem;
     text-align: left;
     color:#512833;
     position: absolute;
-    left:45%;
-    top: 10%;
-    transform: translateX(-50%);
-    width: 80%;
+    line-height: 4.3rem;
+    left:5%;
+    top: 5%;
+    width: 78%;
     z-index: 20;
   }
     
@@ -66,7 +66,8 @@ export default {
 @media screen and (min-width: 1000px){
   .quote{
     font-size: 10rem;
-    top: 13%;
+    line-height: 10.5rem;
+    top: 7%;
     left: 3%;
     transform: translateX(0);
   }

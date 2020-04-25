@@ -48,8 +48,8 @@ export default {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: 1.4rem;
     max-width: 100vw;
-    margin: 15rem auto 3rem auto;
-    padding: 0 2rem;
+    margin: 15rem auto 0rem auto;
+    padding: 0 2rem 10rem 2rem;
   }
   .gallery-panel img {
     width: 100%;
