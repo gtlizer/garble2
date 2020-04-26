@@ -57,7 +57,6 @@ export default {
     background-image: url(../../assets/static/Bitmap.svg);
     background-size: contain;
     position: relative;
-    cursor: url('/src/assets/static/glabe_dark.png'), auto;
   }
 
   header{
