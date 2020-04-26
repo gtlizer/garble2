@@ -25,7 +25,7 @@ export default {
     }
   },
   methods: { 
-   thumbUrl(filename) {
+    thumbUrl(filename) {
       return require(`@/assets/portfolio/${filename}`);
     },
     mouseOver: function(){

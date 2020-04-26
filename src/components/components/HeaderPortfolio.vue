@@ -124,7 +124,7 @@ export default {
             height: 100vh;
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            background-attachment: initial;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -161,23 +161,16 @@ export default {
             height: 100vh;
             background-size:contain;
             background-position: center center;
-            background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
-            transform: rotateZ(0deg);
-            transition: all .5s ease;
 
             .project-title{
               color:white;
               font-size: 5rem;
               text-shadow: 1px 1px black;
             }
-          &:hover{
-            
-          transform: rotateZ(15deg);
-          }
         }
       }
     }

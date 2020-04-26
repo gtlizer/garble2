@@ -61,7 +61,7 @@ export default {
       display: flex;
       font-size: 1.8rem;
       li{
-        margin: 0 2rem;
+        margin: 0 1rem;
       }
     }
   }
@@ -70,6 +70,16 @@ export default {
 
 @media screen and (min-width: 1000px){
   
+  footer{
+
+    ul{
+      
+      
+      li{
+        margin: 0 2rem;
+      }
+    }
+  }
   
 
 }

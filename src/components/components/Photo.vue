@@ -46,7 +46,7 @@ export default {
     closeLightbox() {
       this.$router.push('/photography');
     },
-    nextImage() {
+    async nextImage() {
       var nextimage = (parseInt(this.$route.params.id))+ 1;
       var currentroute = this.$route.path;
       var finalimg = photos.length -1 ;
@@ -59,7 +59,7 @@ export default {
       }
       
     },
-    previousImage() {
+    async previousImage() {
       var previousimage = (parseInt(this.$route.params.id))- 1;
       var finalimg = photos.length -1 ;
       var currentroute = this.$route.path;

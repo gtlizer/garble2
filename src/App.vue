@@ -120,4 +120,13 @@ table {
   overflow:hidden;
 }
 
+/* body::-webkit-scrollbar {
+    background-color:rgba(white,0.1);
+	position: absolute;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:#F0B29F;
+} */
+
 </style>

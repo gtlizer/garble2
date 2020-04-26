@@ -5,7 +5,7 @@
          :key="photo.id">
          <router-link :to="`/photo/${photo.id}`">
           <div class="img-wrapper" >
-              <img :src="thumbUrl(photo.filename)">
+              <v-lazy-image :src="thumbUrl(photo.filename)" :src-placeholder="thumbUrl(photo.filename)"/>
               <div class="hover-text">
                 <p>{{photo.title}}</p>
               </div>
